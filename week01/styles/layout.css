@@ -1,0 +1,78 @@
+
+*{
+    padding: 0;
+    margin:0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 2fr 1fr ;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+header {
+    background-color: darkgray;
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+
+}
+
+h1 {
+    text-align: left;
+    padding: 5px 20px 50px 15px;
+    font-size: medium;
+    
+}
+
+nav {
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-around;
+    padding: 15px;
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main {
+    grid-column: 1 / 5;
+    grid-row: 2 / 3;
+    background-color: lightgray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr; 
+    text-align: left;
+}
+
+p {
+    padding: 10px;
+}
+
+footer {
+    padding: 10px;
+    background-color: darkgrey;
+    grid-column: 1 / 5;
+    grid-row: 3 / 4;
+    text-align: center;
+}
+
+
+/* Class styles */
+
+.aside {
+    grid-column: 4 / 5;
+    padding: 10px;
+    background-color: white;
+
+}
+
+
